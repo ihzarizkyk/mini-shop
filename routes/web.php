@@ -17,5 +17,7 @@ use App\Http\Controllers\HomeController as Home;
 
 Route::get("/",[Home::class,"index"]);
 
-Route::get("/products",[Product::class,"product"]);
-Route::get("/products/{slug}",[Product::class,"detailProduct"]);
+Route::get("/product",[Product::class,"product"]);
+Route::get("/product/detail/{slug}",[Product::class,"detailProduct"]);
+Route::get("/product/checkout/{slug}",[Product::class,"checkout"]);
+Route::get("/product/wishlist/{slug}",[Product::class,"wishProduct"]);
